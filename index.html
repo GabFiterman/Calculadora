@@ -13,101 +13,102 @@
         
         <main>
             <div class="container">
-                <h1>Calculadora Online</h1>
+                <h1>Calculadora Fiterman</h1>
 
                 <div class="row">
                     <div class="col">
-                        <input type="text" placeholder="0" id="resultado">
+                        <input type="text" placeholder="0" id="resultado" autofocus>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button>AC</button>
+                        <button id="AC" onclick="escolheNumero('ac')" >AC</button>
                     </div>
 
                     <div class="col">
-                        <button>+/-</button>   
+                        <button id="inverte">+/-</button>   
                     </div>
 
                     <div class="col">
-                        <button>%</button>  
+                        <button id="%">%</button>  
                     </div>
 
                     <div class="col">
-                        <button>÷</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <button>7</button>
-                    </div>
-
-                    <div class="col">
-                        <button>8</button>   
-                    </div>
-
-                    <div class="col">
-                        <button>9</button>  
-                    </div>
-
-                    <div class="col">
-                        <button>x</button>
+                        <button id="/" onclick="divisao()">÷</button>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button>4</button>
+                        <button id="7" onclick="escolheNumero(7)">7</button>
                     </div>
 
                     <div class="col">
-                        <button>5</button>   
+                        <button id="8" onclick="escolheNumero(8)">8</button>   
                     </div>
 
                     <div class="col">
-                        <button>6</button>  
+                        <button id="9" onclick="escolheNumero(9)">9</button>  
                     </div>
 
                     <div class="col">
-                        <button>-</button>
+                        <button id="x" onclick="multiplicacao()">x</button>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button>1</button>
+                        <button id="4" onclick="escolheNumero(4)">4</button>
                     </div>
 
                     <div class="col">
-                        <button>2</button>   
+                        <button id="5" onclick="escolheNumero(5)">5</button>   
                     </div>
 
                     <div class="col">
-                        <button>3</button>  
+                        <button id="6" onclick="escolheNumero(6)">6</button>  
                     </div>
 
                     <div class="col">
-                        <button>+</button>
+                        <button id="-" onclick="subtracao()">-</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button id="1" onclick="escolheNumero(1)">1</button>
+                    </div>
+
+                    <div class="col">
+                        <button id="2" onclick="escolheNumero(2)">2</button>   
+                    </div>
+
+                    <div class="col">
+                        <button id="3" onclick="escolheNumero(3)">3</button>  
+                    </div>
+
+                    <div class="col">
+                        <button id="+" onclick="soma()">+</button>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col col-6">
-                        <button>0</button>
+                        <button id="0" onclick="escolheNumero(0)">0</button>
                     </div>
 
                     <div class="col col-3">
-                        <button>,</button>  
+                        <button id="," onclick="escolheNumero('.')">,</button>  
                     </div>
 
                     <div class="col col-3">
-                        <button>=</button>
+                        <button id="=" onclick="retornaResultado()">=</button>
                     </div>
                 </div>
 
             </div>
         </main>
     </body>
+    <script type="text/javascript" src="./script/script.js" defer></script>
 </html>
